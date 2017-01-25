@@ -1,0 +1,11 @@
+language: go
+
+go:
+  - 1.7.x
+
+dist: xenial
+os: linux
+
+script:
+  - go build -o ${GOPATH}/bin/hello
+  - hello Odaceo
