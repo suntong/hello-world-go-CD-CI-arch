@@ -3,9 +3,17 @@ language: go
 go:
   - 1.7.x
 
-dist: xenial
 os: linux
+dist: trusty
+env:
+  global:
+    - BUILD_GOARCH=amd64
+  matrix:
+    - BUILD_GOOS=linux
+    - BUILD_GOOS=darwin
+    - BUILD_GOOS=windows
 
 script:
-  - go build -o ${GOPATH}/bin/hello
-  - hello Odaceo
+  - env GOARCH=${BUILD_GOARCH} GOOS=${BUILD_GOOS} go build -o ${GOPATH}/bin/hello-${BUILD_GOOS}-${BUILD_GOARCH}
+  - if [[ "$BUILD_GOOS" == "linux" ]]; then hello-${BUILD_GOOS}-${BUILD_GOARCH} Odaceo ; fi
+
