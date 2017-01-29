@@ -35,7 +35,7 @@ and architecture use the following command:
 env GOOS=darwin GOARCH=amd64 go build -o bin/hello
 ```
 
-See [https://golang.org/doc/install/source#environment](the valid combinations of operating system and compilation architecture).
+See [the valid combinations of operating system and compilation architecture](https://golang.org/doc/install/source#environment).
 
 Cross compilation was never be so easy!
 
