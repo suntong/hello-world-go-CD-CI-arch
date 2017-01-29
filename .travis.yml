@@ -17,3 +17,8 @@ script:
   - env GOARCH=${BUILD_GOARCH} GOOS=${BUILD_GOOS} go build -o ${GOPATH}/bin/hello-${BUILD_GOOS}-${BUILD_GOARCH}
   - if [[ "$BUILD_GOOS" == "linux" ]]; then hello-${BUILD_GOOS}-${BUILD_GOARCH} Odaceo ; fi
 
+deploy:
+  provider: bintray
+  file: bintray.json
+  user: ${BINTRAY_USER}
+  key: ${BINTRAY_PASS}

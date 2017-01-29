@@ -1,0 +1,45 @@
+{
+    "package": {
+        "name": "lab-hello-world-go",
+        "repo": "generic",
+        "subject": "odaceo",
+        "desc": "A simple Go application on Linux.",
+        "website_url": "https://github.com/odaceo/lab-hello-world-go",
+        "issue_tracker_url": "https://github.com/odaceo/lab-hello-world-go/issues",
+        "vcs_url": "https://github.com/odaceo/lab-hello-world-go.git",
+        "licenses": ["Apache-2.0"],
+        "public_download_numbers": true,
+        "public_stats": true
+    },
+
+    "version": {
+        "name": "0.1.0",
+        "gpgSign": false
+    },
+
+    "files": [
+        {
+            "includePattern": "/home/travis/gopath/bin/hello-linux-amd64", 
+            "uploadPattern": "/linux-amd64/hello",
+            "matrixParams": {
+                "override": 1 
+            }
+        },
+        {
+            "includePattern": "/home/travis/gopath/bin/hello-darwin-amd64", 
+            "uploadPattern": "/darwin-amd64/hello",
+            "matrixParams": {
+                "override": 1 
+            }
+        },
+        {
+            "includePattern": "/home/travis/gopath/bin/hello-windows-amd64", 
+            "uploadPattern": "/windows-amd64/hello.exe",
+            "matrixParams": {
+                "override": 1 
+            }
+        }
+    ],
+
+    "publish": true
+}
