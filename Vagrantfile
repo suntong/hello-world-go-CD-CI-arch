@@ -24,7 +24,6 @@ Vagrant.configure(2) do |config|
     args: ["vagrant-ubuntu-xenial-64", "en_US.UTF-8", "Europe/Zurich"]
 
   config.vm.provision "shell", privileged: false, 
-    path: "https://github.com/odaceo/script-ubuntu-golang/raw/master/install.sh",
-    args: ["/vagrant"]
+    path: "https://github.com/odaceo/script-ubuntu-golang/raw/master/install.sh"
 
 end

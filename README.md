@@ -44,7 +44,7 @@ Cross compilation was never be so easy!
 To launch the application use the following command:
 
 ``` shell
-hello Odaceo
+./bin/hello Odaceo
 ```
 
 ## Reporting Issues
