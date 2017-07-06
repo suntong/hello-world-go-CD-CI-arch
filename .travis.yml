@@ -5,7 +5,6 @@ go:
 
 os: linux
 dist: trusty
-sudo: required
 env:
   global:
     - BUILD_GOARCH=amd64
