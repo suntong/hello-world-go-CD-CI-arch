@@ -4,7 +4,6 @@
         "repo": "generic",
         "subject": "odaceo",
         "desc": "A simple Go application on Linux.",
-        "maturity": "Experimental",
         "website_url": "https://github.com/odaceo/lab-hello-world-go",
         "issue_tracker_url": "https://github.com/odaceo/lab-hello-world-go/issues",
         "vcs_url": "https://github.com/odaceo/lab-hello-world-go.git",
