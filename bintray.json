@@ -17,7 +17,7 @@
     },
 
     "files": [{
-        "includePattern": "/home/travis/gopath/bin/hello-(.*)-amd64",
+        "includePattern": ".home.travis.gopath.bin.hello-(.*)-amd64",
 	"excludePattern": "-windows-",
             "uploadPattern": "/hello-world-go/static-amd64-$1/hello",
             "matrixParams": {
