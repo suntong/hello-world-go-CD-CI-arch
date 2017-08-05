@@ -1,45 +1,35 @@
 {
     "package": {
-        "name": "lab-hello-world-go",
-        "repo": "generic",
-        "subject": "odaceo",
+        "name": "hello-world-go",
+        "repo": "bin",
+        "subject": "suntong",
         "desc": "A simple Go application on Linux.",
-        "website_url": "https://github.com/odaceo/lab-hello-world-go",
-        "issue_tracker_url": "https://github.com/odaceo/lab-hello-world-go/issues",
-        "vcs_url": "https://github.com/odaceo/lab-hello-world-go.git",
+        "website_url": "https://github.com/suntong/hello-world-go",
+        "issue_tracker_url": "https://github.com/suntong/hello-world-go/issues",
+        "vcs_url": "https://github.com/suntong/hello-world-go.git",
         "licenses": ["Apache-2.0"],
-        "public_download_numbers": true,
-        "public_stats": true
+        "public_download_numbers": false
     },
 
     "version": {
-        "name": "master",
+        "name": "latest",
         "gpgSign": false
     },
 
-    "files": [
-        {
-            "includePattern": "/home/travis/gopath/bin/hello-linux-amd64", 
-            "uploadPattern": "/lab-hello-world-go/master/linux-amd64-static/hello",
-            "matrixParams": {
-                "override": 1 
-            }
-        },
-        {
-            "includePattern": "/home/travis/gopath/bin/hello-darwin-amd64", 
-            "uploadPattern": "/lab-hello-world-go/master/darwin-amd64-static/hello",
+    "files": [{
+            "includePattern": "/home/travis/gopath/bin/hello-([ld].*)-amd64", 
+            "uploadPattern": "/hello-world-go/static-amd64-$1/hello",
             "matrixParams": {
                 "override": 1 
             }
         },
         {
             "includePattern": "/home/travis/gopath/bin/hello-windows-amd64", 
-            "uploadPattern": "/lab-hello-world-go/master/windows-amd64-static/hello.exe",
+            "uploadPattern": "/hello-world-go/static-amd64-windows/hello.exe",
             "matrixParams": {
                 "override": 1 
             }
-        }
-    ],
+        }],
 
     "publish": true
 }

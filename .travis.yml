@@ -1,10 +1,5 @@
 language: go
 
-go:
-  - 1.8
-
-os: linux
-dist: trusty
 env:
   global:
     - BUILD_GOARCH=amd64
@@ -20,5 +15,5 @@ script:
 deploy:
   provider: bintray
   file: bintray.json
-  user: ${BINTRAY_USER}
-  key: ${BINTRAY_PASS}
+  user: suntong
+  key: ${BINTRAY_API_KEY}
