@@ -17,20 +17,10 @@
     },
 
     "files": [{
-        "includePattern": ".home.travis.gopath.bin.hello-(.*)-amd64",
-	"excludePattern": "-windows-",
-            "uploadPattern": "/hello-world-go/static-amd64-$1/hello",
-            "matrixParams": {
-                "override": 1 
-            }
-        },
-        {
-            "includePattern": "/home/travis/gopath/bin/hello-windows-amd64", 
-            "uploadPattern": "/hello-world-go/static-amd64-windows/hello.exe",
-            "matrixParams": {
-                "override": 1 
-            }
-        }],
-
+	"includePattern": "out/(.*)", "uploadPattern": "hello-world-go/$1",
+        "matrixParams": {
+            "override": 1
+        }
+    }],
     "publish": true
 }

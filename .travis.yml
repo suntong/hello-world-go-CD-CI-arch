@@ -1,19 +1,12 @@
 language: go
 
-env:
-  global:
-    - BUILD_GOARCH=amd64
-  matrix:
-    - BUILD_GOOS=linux
-    - BUILD_GOOS=darwin
-    - BUILD_GOOS=windows
-
 script:
-  - env GOARCH=${BUILD_GOARCH} GOOS=${BUILD_GOOS} go build -o ${GOPATH}/bin/hello-${BUILD_GOOS}-${BUILD_GOARCH}
-  - if [[ "$BUILD_GOOS" == "linux" ]]; then hello-${BUILD_GOOS}-${BUILD_GOARCH} Odaceo ; fi
+  - go get github.com/mitchellh/gox
+  - gox -osarch="linux/386 linux/amd64 darwin/amd64 windows/amd64" -output="out/{{.Dir}}-{{.OS}}-{{.Arch}}"
+# linux/386 linux/amd64 linux/arm darwin/amd64 darwin/386 windows/amd64 windows/386
 
 deploy:
-  provider: bintray
+- provider: bintray
   file: bintray.json
   user: suntong
   key: ${BINTRAY_API_KEY}
