@@ -19,9 +19,9 @@ import "os"
 import "fmt"
 
 func main() {
-    if (len(os.Args) != 2) {
-        fmt.Printf("Usage: hello NAME\n");
-    } else {
-        fmt.Printf("%s\n", SayHello(os.Args[1]))
-    }
+	if len(os.Args) < 2 {
+		fmt.Printf("Usage: hello NAME\n")
+	} else {
+		fmt.Printf("%s\n", SayHello(os.Args[1]))
+	}
 }
