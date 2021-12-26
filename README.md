@@ -1,4 +1,7 @@
 # Lab :: Hello World :: Go Application
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![License](https://img.shields.io/github/license/odaceo/lab-hello-world-go.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/odaceo/lab-hello-world-go.svg)](https://travis-ci.org/odaceo/lab-hello-world-go)
@@ -65,3 +68,23 @@ All the source code is distributed under [ASL 2.0](LICENSE).
 
 
 
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/suntong"><img src="https://avatars.githubusercontent.com/u/422244?v=4?s=100" width="100px;" alt=""/><br /><sub><b>suntong</b></sub></a><br /><a href="https://github.com/suntong/hello-world-go-CD-CI-arch/commits?author=suntong" title="Code">💻</a> <a href="#ideas-suntong" title="Ideas, Planning, & Feedback">🤔</a> <a href="#design-suntong" title="Design">🎨</a> <a href="https://github.com/suntong/hello-world-go-CD-CI-arch/commits?author=suntong" title="Documentation">📖</a> <a href="https://github.com/suntong/hello-world-go-CD-CI-arch/commits?author=suntong" title="Tests">⚠️</a> <a href="#example-suntong" title="Examples">💡</a> <a href="#maintenance-suntong" title="Maintenance">🚧</a> <a href="#projectManagement-suntong" title="Project Management">📆</a> <a href="#question-suntong" title="Answering Questions">💬</a> <a href="#tool-suntong" title="Tools">🔧</a> <a href="#tutorial-suntong" title="Tutorials">✅</a> <a href="#infra-suntong" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
